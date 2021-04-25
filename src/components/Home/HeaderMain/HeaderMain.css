@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 .headerContainer {
-  background: linear-gradient(rgba(242, 120, 75, 0.5), rgba(0, 0, 0, 0.7)),
+  /* background: linear-gradient(rgba(242, 120, 75, 0.5), rgba(0, 0, 0, 0.7)),
+    url("./../../../Images/couch/couch-2-resized.jpg"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./../../../Images/couch/couch-2-resized.jpg");
   background-size: cover;
   background-position: bottom center;
@@ -14,19 +16,24 @@
 }
 
 .headerText {
-  /* color: rgb(241, 115, 72); */
   color: white;
   font-family: "Poppins", sans-serif;
-  font-size: 5rem;
-  text-align: center;
+  font-size: 4.5rem;
   font-weight: 200;
-  padding-top: 7.5rem;
 }
 .headerActionBtn {
   text-align: center;
   font-family: "Poppins", sans-serif;
   padding: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
+  background-color: none;
+  color: white;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: 0.2rem solid white;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }
 
 @media (max-width: 480px) {
@@ -34,6 +41,11 @@
     height: 30vh;
   }
   .headerText {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .headerActionBtn {
+    font-size: 0.8rem;
+    padding: 0.5rem;
   }
 }
