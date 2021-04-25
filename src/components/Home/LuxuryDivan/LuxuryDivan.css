@@ -1,0 +1,16 @@
+.divanMain {
+  display: flex;
+  align-items: center;
+  height: 30vh;
+}
+.divanSideInfo {
+  border: 1px solid blue;
+  border-bottom: 100px solid red;
+  /* border-left: 50px solid transparent; */
+  height: 0;
+  width: 70%;
+  height: inherit;
+}
+.divanSideImg {
+  width: 25%;
+}
