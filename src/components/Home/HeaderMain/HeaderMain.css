@@ -7,7 +7,6 @@
     url("./../../../Images/couch/couch-2-resized.jpg");
   background-size: cover;
   background-position: bottom center;
-  margin-top: 5rem;
   height: 50vh;
   display: flex;
   align-items: center;

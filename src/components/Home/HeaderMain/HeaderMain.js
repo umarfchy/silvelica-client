@@ -3,9 +3,9 @@ import "./HeaderMain.css";
 
 const HeaderMain = () => {
   return (
-    <header className="headerContainer">
+    <header className="headerContainer container">
       <h3 className="headerText">Furniture That Matters</h3>
-      <button className="headerActionBtn">Order Now</button>
+      <button className="headerActionBtn">Order Now ➔</button>
     </header>
   );
 };
