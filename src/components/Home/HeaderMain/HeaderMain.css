@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 .headerContainer {
-  /* background: linear-gradient(rgba(242, 120, 75, 0.5), rgba(0, 0, 0, 0.7)),
-    url("./../../../Images/couch/couch-2-resized.jpg"); */
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./../../../Images/couch/couch-2-resized.jpg");
   background-size: cover;

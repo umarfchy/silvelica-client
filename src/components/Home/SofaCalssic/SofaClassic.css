@@ -1,4 +1,4 @@
-.divanMain {
+.sofaMain {
   display: flex;
   background: #2b2b2ff1;
   justify-content: space-between;
@@ -6,23 +6,25 @@
   height: 40vh;
 }
 
-.divanSideImg {
-  width: 40%;
+.sofaSideImg {
+  height: 120%;
+  margin-right: 8rem;
 }
 
-.divanSideInfo {
+.sofaSideInfo {
   width: 30rem;
-  margin: 1rem 2rem;
+  margin: 0 2rem;
 }
 
-.divanSideInfo > p,
+.sofaSideInfo > p,
 h2 {
   color: white;
+  margin: 0;
 }
 
 @media (max-width: 480px) {
-  .divanSideInfo > h2 {
-    margin-top: 8rem;
-    padding: 1rem;
+  .sofaSideImg {
+    height: inherit;
+    margin-right: 8rem;
   }
 }
