@@ -1,16 +1,26 @@
 .divanMain {
   display: flex;
+  background: #9e483f;
   align-items: center;
   height: 30vh;
 }
-.divanSideInfo {
-  border: 1px solid blue;
-  border-bottom: 100px solid red;
-  /* border-left: 50px solid transparent; */
-  height: 0;
-  width: 70%;
-  height: inherit;
-}
+
 .divanSideImg {
-  width: 25%;
+  /* width: calc(50%-50px); */
+  /* background-color: white;
+  padding: 2% 5%;
+  line-height: 1.5em; */
 }
+/* .divanSideInfo {
+  width: 50%;
+  margin: 0 4.4rem 0 0;
+  height: 100%;
+  background: blue;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 480px) {
+  .divanSideInfo {
+    margin: 0 0 0 0;
+  }
+} */

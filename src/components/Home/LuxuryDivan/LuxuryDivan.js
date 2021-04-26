@@ -5,9 +5,9 @@ import luxuryDivanImg from "./../../../Images/furnitureForShow/luxury-divan.png"
 const LuxuryDivan = () => {
   return (
     <div className="divanMain container">
-      <img className="divanSideImg" src={luxuryDivanImg} alt="" />
+      {/* <img src={luxuryDivanImg} alt="" className="divanSideImg" /> */}
       <div className="divanSideInfo">
-        <h2>Luxury That Defines You</h2>
+        <p>Luxury That Defines You</p>
       </div>
     </div>
   );
