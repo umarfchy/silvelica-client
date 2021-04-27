@@ -8,7 +8,7 @@ const PurchaseShow = () => {
         backgroundColor: "#2b2b2ff1",
         borderBottom: "0.1rem solid #2b2b2f",
       }}
-      className="row container mx-auto gx-4"
+      className="row container mx-auto pt-5"
     >
       <PurchaseCard></PurchaseCard>
       <PurchaseCard></PurchaseCard>
