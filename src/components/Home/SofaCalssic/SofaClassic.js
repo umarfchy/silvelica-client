@@ -10,8 +10,8 @@ const SofaClassic = () => {
   return (
     <section
       style={{
-        backgroundColor: "#2b2b2ff1",
-        borderBottom: "0.1rem solid #2b2b2f",
+        backgroundColor: "#2b2b2f",
+        borderBottom: "0.1rem solid #000",
       }}
       className={isMobile ? mobSectionCls : pcSectionCls}
     >

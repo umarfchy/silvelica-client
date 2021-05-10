@@ -6,10 +6,10 @@ const PurchaseCard = () => {
     <div
       style={{
         color: "white",
+        width: "19rem",
+        height: "15rem",
         background: "rgba(0, 0, 0, 0.9)",
         border: "1px solid rgba(255, 255, 255, .5)",
-        width: "24rem",
-        height: "15rem",
       }}
       className="row"
     >
@@ -34,13 +34,15 @@ const PurchaseCard = () => {
           <small>Lorem ipsum dolor sit amet consectetur.</small>
         </div>
         <div
-          style={{ width: "12rem" }}
+          style={{ width: "8rem" }}
           className="d-flex align-items-center justify-content-between my-2"
         >
-          <h5 className="m-auto">$500</h5>
+          <h6 className="my-auto mr-3">$500</h6>
           <button
             style={{
               borderRadius: "0",
+              fontSize: "0.8rem",
+              fontWeight: "bold",
             }}
             className="btn btn-info mx-auto"
           >

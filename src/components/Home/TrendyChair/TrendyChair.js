@@ -7,15 +7,18 @@ const TrendyChair = () => {
 
   return (
     <div
-      style={{ backgroundColor: "#2b2b2ff1" }}
-      className="container row d-flex align-items-center mx-auto pt-4"
+      style={{
+        backgroundColor: "#2b2b2f",
+        borderBottom: "0.1rem solid #000",
+      }}
+      className="container row d-flex align-items-center justify-content-center mx-auto pt-4"
     >
-      <div className="col-md-6 col-sm-12">
+      <div className="col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
         <img
           width="200rem"
           src={trendyChairImg}
           alt=""
-          className="img-fluid rounded mx-auto d-block"
+          className="img-fluid mb-2"
         />
       </div>
       <div

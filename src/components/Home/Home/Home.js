@@ -9,10 +9,10 @@ import TrendyChair from "../TrendyChair/TrendyChair";
 const Home = () => {
   return (
     <div>
-      {/* <Header></Header>
+      <Header></Header>
       <LuxuryDivan></LuxuryDivan>
       <SofaClassic></SofaClassic>
-      <TrendyChair></TrendyChair> */}
+      <TrendyChair></TrendyChair>
       <PurchaseShow></PurchaseShow>
     </div>
   );

@@ -8,7 +8,7 @@ const PurchaseShow = () => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 4,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -24,14 +24,20 @@ const PurchaseShow = () => {
     },
   };
   return (
-    <section>
-      <h3 className="text-center text-white py-3 mx-auto">Carousel Slider</h3>
+    <section
+      style={{
+        background: "rgba(43, 43, 47, .9)",
+      }}
+      className="container"
+    >
+      <h3 className="text-center text-white py-3 mx-auto">
+        Select Your Favorite Items Here
+      </h3>
       <Carousel
         additionalTransfrom={0}
         arrows
         autoPlaySpeed={3000}
         centerMode={false}
-        className=""
         containerClass="container-with-dots"
         dotListClass=""
         draggable
@@ -48,12 +54,13 @@ const PurchaseShow = () => {
         slidesToSlide={1}
         swipeable
       >
-        <PurchaseCard></PurchaseCard>
-        <PurchaseCard></PurchaseCard>
-        <PurchaseCard></PurchaseCard>
-        <PurchaseCard></PurchaseCard>
-        <PurchaseCard></PurchaseCard>
+        <PurchaseCard />
+        <PurchaseCard />
+        <PurchaseCard />
+        <PurchaseCard />
+        <PurchaseCard />
       </Carousel>
+      <> </>
     </section>
   );
 };

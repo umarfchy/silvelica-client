@@ -6,8 +6,8 @@ const LuxuryDivan = () => {
   return (
     <div
       style={{
-        backgroundColor: "#2b2b2ff1",
-        borderBottom: "0.1rem solid #2b2b2f",
+        backgroundColor: "#2b2b2f",
+        borderBottom: "0.1rem solid #000",
       }}
       className="container row d-flex align-items-center mx-auto"
     >
