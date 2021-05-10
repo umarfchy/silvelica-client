@@ -4,7 +4,7 @@ import trendyChairImg from "./../../../Images/furnitureForShow/go-with-the-trend
 const PurchaseCard = () => {
   return (
     <div
-      style={{ border: "0.1rem solid ", height: "30vh" }}
+      style={{ border: "0.1rem solid ", height: "30vh", margin: "1rem" }}
       className="col-md-4 col-sm-12  d-flex align-items-center p-1 mx-1"
     >
       <div className="row">

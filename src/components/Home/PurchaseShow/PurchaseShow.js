@@ -24,35 +24,37 @@ const PurchaseShow = () => {
     },
   };
   return (
-    // <section
-    //   style={{
-    //     backgroundColor: "#2b2b2ff1",
-    //     borderBottom: "0.1rem solid #2b2b2f",
-    //   }}
-    //   className="row container mx-auto pt-5"
-    // >
-    //   <h3 className="text-center text-white py-3 mx-auto">Carousel Slider</h3>
-    <Carousel responsive={responsive}>
-      <h2 className="text-white">HI</h2>
-
-      <div>
+    <section>
+      <h3 className="text-center text-white py-3 mx-auto">Carousel Slider</h3>
+      <Carousel
+        additionalTransfrom={0}
+        arrows
+        autoPlaySpeed={3000}
+        centerMode={false}
+        className=""
+        containerClass="container-with-dots"
+        dotListClass=""
+        draggable
+        focusOnSelect={false}
+        infinite
+        itemClass=""
+        keyBoardControl
+        minimumTouchDrag={80}
+        renderButtonGroupOutside={false}
+        renderDotsOutside={false}
+        responsive={responsive}
+        showDots={false}
+        sliderClass=""
+        slidesToSlide={1}
+        swipeable
+      >
         <PurchaseCard></PurchaseCard>
-      </div>
-      <div>
         <PurchaseCard></PurchaseCard>
-      </div>
-      <div>
         <PurchaseCard></PurchaseCard>
-      </div>
-      <div>
         <PurchaseCard></PurchaseCard>
-      </div>
-      <div>
         <PurchaseCard></PurchaseCard>
-      </div>
-    </Carousel>
-
-    // </section>
+      </Carousel>
+    </section>
   );
 };
 
