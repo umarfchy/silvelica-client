@@ -14,9 +14,9 @@ const LuxuryDivan = () => {
       <div className="col-md-6 col-sm-12">
         <img src={luxuryDivanImg} alt="" className="img-fluid" />
       </div>
-      <div className="col-md-6 col-sm-12">
-        <h3 className="mb-4 text-white">Luxury That Defines You</h3>
-        <p className="text-white">
+      <div className="col-md-6 col-sm-12 text-justify">
+        <h3 className="mb-4 text-white text-center">Luxury That Defines You</h3>
+        <p className="text-white  px-2">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas qui
           debitis sit nemo esse doloribus sunt est expedita! Nihil ea corrupti
           quisquam, commodi perferendis debitis nesciunt qui corporis soluta

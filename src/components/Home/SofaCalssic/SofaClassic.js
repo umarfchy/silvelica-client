@@ -15,8 +15,8 @@ const SofaClassic = () => {
       }}
       className={isMobile ? mobSectionCls : pcSectionCls}
     >
-      <div className="col-md-6 col-sm-12">
-        <h3 className="mb-4 text-white">Classic As Always</h3>
+      <div className="col-md-6 col-sm-12 text-justify">
+        <h3 className="mb-4 text-white text-center">Classic As Always</h3>
         <p className="text-white">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas qui
           debitis sit nemo esse doloribus sunt est expedita! Nihil ea corrupti

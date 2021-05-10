@@ -19,9 +19,13 @@ const TrendyChair = () => {
         />
       </div>
       <div
-        className={isMobile ? "col-md-6 col-sm-12 mt-5" : "col-md-6 col-sm-12"}
+        className={
+          isMobile
+            ? "col-md-6 col-sm-12 text-justify mt-5"
+            : "col-md-6 col-sm-12 text-justify"
+        }
       >
-        <h3 className="mb-4 text-white">Go With The Trend</h3>
+        <h3 className="mb-4 text-white text-center">Go With The Trend</h3>
         <p className="text-white">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas qui
           debitis sit nemo esse doloribus sunt est expedita! Nihil ea corrupti
