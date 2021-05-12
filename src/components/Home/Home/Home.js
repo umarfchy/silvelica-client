@@ -9,11 +9,11 @@ import TrendyChair from "../TrendyChair/TrendyChair";
 const Home = () => {
   return (
     <div>
-      <Header></Header>
+      <PurchaseShow></PurchaseShow>
+      {/* <Header></Header>
       <LuxuryDivan></LuxuryDivan>
       <SofaClassic></SofaClassic>
-      <TrendyChair></TrendyChair>
-      <PurchaseShow></PurchaseShow>
+      <TrendyChair></TrendyChair> */}
     </div>
   );
 };
