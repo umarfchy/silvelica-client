@@ -8,14 +8,20 @@ const PurchaseCard = () => {
     ? {
         color: "white",
         width: "18rem",
-        border: "1px solid red",
+        height: "15rem",
+        background: "rgba(0, 0, 0, 0.9)",
+        border: "1px solid rgba(255, 255, 255, .5)",
+        display: "flex",
+        margin: "1rem auto",
       }
     : {
         color: "white",
         width: "19rem",
         height: "15rem",
+        margin: "1rem auto",
         background: "rgba(0, 0, 0, 0.9)",
         border: "1px solid rgba(255, 255, 255, .5)",
+        display: "flex",
       };
 
   const cardParentDivClass = isMobile
@@ -23,17 +29,18 @@ const PurchaseCard = () => {
     : "col-sm-6 col-md-6 d-flex justify-content-center align-items-center";
 
   return (
-    <div style={cardParentDivStyle} className="row">
+    <div style={cardParentDivStyle}>
       {/* image container div */}
       <div
-        // style={{ borderRight: "1px solid rgba(255, 255, 255, .5)" }}
+        style={{ borderRight: "1px solid rgba(255, 255, 255, .5)" }}
         className={cardParentDivClass}
       >
         <img
           style={
             isMobile
               ? {
-                  width: "50px",
+                  width: "10rem",
+                  margin: "auto 3.1rem",
                 }
               : {}
           }
@@ -48,7 +55,7 @@ const PurchaseCard = () => {
         <div
           style={
             isMobile
-              ? {}
+              ? { marginTop: "0.5rem" }
               : {
                   height: "10rem",
                   marginTop: ".5rem",
@@ -60,7 +67,7 @@ const PurchaseCard = () => {
           <small>Lorem ipsum dolor sit amet consectetur.</small>
         </div>
         <div
-          style={isMobile ? {} : { width: "8rem" }}
+          style={{ width: "8rem" }}
           className="d-flex align-items-center justify-content-between my-2"
         >
           <h6 className="my-auto mr-3">$500</h6>
