@@ -109,7 +109,7 @@ const PurchaseShow = () => {
       className="container"
     >
       <h3 className="text-center text-white py-2 mx-auto">
-        Select Your Favorite Chairs
+        Find Your Favorite Chair
       </h3>
       <Carousel
         additionalTransfrom={0}
