@@ -1,4 +1,7 @@
 import React from "react";
+import About from "../About/About";
+import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import LuxuryDivan from "../LuxuryDivan/LuxuryDivan";
 import PurchaseShowChair from "../PurchaseShowChair/PurchaseShowChair";
@@ -15,6 +18,9 @@ const Home = () => {
       <TrendyChair></TrendyChair>
       <PurchaseShowSofa></PurchaseShowSofa>
       <PurchaseShowChair></PurchaseShowChair>
+      <About></About>
+      <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 };

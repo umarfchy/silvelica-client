@@ -33,6 +33,11 @@
   outline: none;
 }
 
+.headerActionBtn:hover {
+  color: black;
+  background: white;
+}
+
 @media (max-width: 480px) {
   .headerContainer {
     height: 30vh;
