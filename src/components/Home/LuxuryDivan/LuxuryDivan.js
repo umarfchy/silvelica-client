@@ -29,7 +29,12 @@ const LuxuryDivan = () => {
       </div>
       <div className="col-md-6 col-sm-12 text-justify">
         <h3 className="mb-4 text-white text-center">Luxury That Defines You</h3>
-        <p className="text-white  px-2">
+        <p
+          style={{
+            color: "rgba(255, 255, 255, 0.7)",
+          }}
+          className="px-2"
+        >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas qui
           debitis sit nemo esse doloribus sunt est expedita! Nihil ea corrupti
           quisquam, commodi perferendis debitis nesciunt qui corporis soluta

@@ -3,6 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <section
+      id="about"
       className="container"
       style={{
         padding: "1rem 0",
@@ -11,7 +12,12 @@ const About = () => {
       }}
     >
       <h3 className="text-center text-white">About Us</h3>
-      <p className="px-5 mx-auto text-justify text-white">
+      <p
+        style={{
+          color: "rgba(255, 255, 255, 0.7)",
+        }}
+        className="px-5 mx-auto text-justify "
+      >
         We provide world class luxury furniture. We aim to deliver the best
         products to our customer. Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Quas laboriosam reprehenderit, magni nesciunt saepe

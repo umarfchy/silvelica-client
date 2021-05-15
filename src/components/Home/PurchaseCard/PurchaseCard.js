@@ -68,7 +68,13 @@ const PurchaseCard = props => {
           }
         >
           <h6 className="text-center">{title}</h6>
-          <small>{details}</small>
+          <small
+            style={{
+              color: "rgba(255, 255, 255, 0.8)",
+            }}
+          >
+            {details}
+          </small>
         </div>
         <div
           style={{ width: "8rem" }}

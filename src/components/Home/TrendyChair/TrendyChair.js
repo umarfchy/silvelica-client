@@ -36,7 +36,11 @@ const TrendyChair = () => {
         }
       >
         <h3 className="mb-4 text-white text-center">Go With The Trend</h3>
-        <p className="text-white">
+        <p
+          style={{
+            color: "rgba(255, 255, 255, 0.7)",
+          }}
+        >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas qui
           debitis sit nemo esse doloribus sunt est expedita! Nihil ea corrupti
           quisquam, commodi perferendis debitis nesciunt qui corporis soluta
