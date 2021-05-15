@@ -10,6 +10,7 @@ const TrendyChair = () => {
       style={{
         backgroundColor: "#2b2b2f",
         borderBottom: "0.1rem solid #000",
+        padding: "1rem",
       }}
       className="container row d-flex align-items-center justify-content-center mx-auto pt-4"
     >

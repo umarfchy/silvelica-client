@@ -26,7 +26,7 @@ const PurchaseShow = () => {
   return (
     <section
       style={{
-        background: "rgba(43, 43, 47, .9)",
+        background: "rgba(43, 43, 47, 1)",
       }}
       className="container"
     >
