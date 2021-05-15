@@ -1,8 +1,9 @@
 import React from "react";
 import Header from "../Header/Header";
 import LuxuryDivan from "../LuxuryDivan/LuxuryDivan";
-import PurchaseShow from "../PurchaseShow/PurchaseShow";
-import SofaClassic from "../SofaCalssic/SofaClassic";
+import PurchaseShowChair from "../PurchaseShowChair/PurchaseShowChair";
+import PurchaseShowSofa from "../PurchaseShowSofa/PurchaseShowSofa";
+import SofaClassic from "../SofaClassic/SofaClassic";
 import TrendyChair from "../TrendyChair/TrendyChair";
 
 const Home = () => {
@@ -12,7 +13,8 @@ const Home = () => {
       <LuxuryDivan></LuxuryDivan>
       <SofaClassic></SofaClassic>
       <TrendyChair></TrendyChair>
-      <PurchaseShow></PurchaseShow>
+      <PurchaseShowSofa></PurchaseShowSofa>
+      <PurchaseShowChair></PurchaseShowChair>
     </div>
   );
 };

@@ -1,8 +1,9 @@
 import React from "react";
-import trendyChairImg from "./../../../Images/furnitureForShow/go-with-the-trend-1.png";
 import { useMediaPredicate } from "react-media-hook";
 
-const PurchaseCard = () => {
+const PurchaseCard = props => {
+  const { title, details, img, price } = props.info;
+
   const isMobile = useMediaPredicate("(max-width: 480px)");
   const cardParentDivStyle = isMobile
     ? {
@@ -40,11 +41,14 @@ const PurchaseCard = () => {
             isMobile
               ? {
                   width: "10rem",
+                  height: "10rem",
                   margin: "auto 3.1rem",
                 }
-              : {}
+              : {
+                  height: "10rem",
+                }
           }
-          src={trendyChairImg}
+          src={img}
           alt=""
           className="img-fluid"
         />
@@ -63,14 +67,14 @@ const PurchaseCard = () => {
                 }
           }
         >
-          <h6 className="text-center">Lorem ipsum dolor sit.</h6>
-          <small>Lorem ipsum dolor sit amet consectetur.</small>
+          <h6 className="text-center">{title}</h6>
+          <small>{details}</small>
         </div>
         <div
           style={{ width: "8rem" }}
           className="d-flex align-items-center justify-content-between my-2"
         >
-          <h6 className="my-auto mr-3">$500</h6>
+          <h6 className="my-auto mr-3">${price}</h6>
           <button
             style={{
               borderRadius: "0",

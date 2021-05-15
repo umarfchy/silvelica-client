@@ -16,7 +16,13 @@ const TrendyChair = () => {
     >
       <div className="col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
         <img
-          width="200rem"
+          style={
+            isMobile
+              ? {
+                  padding: "0 5rem",
+                }
+              : { width: "13rem" }
+          }
           src={trendyChairImg}
           alt=""
           className="img-fluid mb-2"

@@ -1,8 +1,10 @@
 import React from "react";
+import { useMediaPredicate } from "react-media-hook";
 // import "./LuxuryDivan.css";
 import luxuryDivanImg from "./../../../Images/furnitureForShow/luxury-divan.png";
 
 const LuxuryDivan = () => {
+  const isMobile = useMediaPredicate("(max-width: 480px)");
   return (
     <div
       style={{
@@ -12,7 +14,18 @@ const LuxuryDivan = () => {
       className="container row d-flex align-items-center mx-auto"
     >
       <div className="col-md-6 col-sm-12">
-        <img src={luxuryDivanImg} alt="" className="img-fluid" />
+        <img
+          style={
+            isMobile
+              ? {
+                  padding: "0 1rem",
+                }
+              : { width: "28rem" }
+          }
+          src={luxuryDivanImg}
+          alt=""
+          className="img-fluid"
+        />
       </div>
       <div className="col-md-6 col-sm-12 text-justify">
         <h3 className="mb-4 text-white text-center">Luxury That Defines You</h3>

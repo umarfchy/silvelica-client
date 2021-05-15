@@ -5,7 +5,7 @@ import { useMediaPredicate } from "react-media-hook";
 const SofaClassic = () => {
   const isMobile = useMediaPredicate("(max-width: 480px)");
   const mobSectionCls = "container row d-flex mx-auto flex-column-reverse";
-  const pcSectionCls = "container row d-flex align-items-center mx-auto pt-4 ";
+  const pcSectionCls = "container row d-flex align-items-center mx-auto";
 
   return (
     <section
@@ -26,7 +26,18 @@ const SofaClassic = () => {
         </p>
       </div>
       <div className="col-md-3 col-sm-12 mx-auto">
-        <img width="400rem" src={sofaClassicImg} alt="" className="img-fluid" />
+        <img
+          style={
+            isMobile
+              ? {
+                  padding: "0 4rem",
+                }
+              : { width: "400rem" }
+          }
+          src={sofaClassicImg}
+          alt=""
+          className="img-fluid"
+        />
       </div>
     </section>
   );
