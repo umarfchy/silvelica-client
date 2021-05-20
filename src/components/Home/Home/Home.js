@@ -1,10 +1,11 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
+
+//page body show section
 import About from "../About/About";
 import Contact from "../Contact/Contact/Contact";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-
-//page body show section
 import LuxuryDivan from "../LuxuryDivan/LuxuryDivan";
 import SofaClassic from "../SofaClassic/SofaClassic";
 import TrendyChair from "../TrendyChair/TrendyChair";
@@ -17,13 +18,27 @@ const Home = () => {
   return (
     <div>
       <Header></Header>
-      <LuxuryDivan></LuxuryDivan>
-      <SofaClassic></SofaClassic>
-      <TrendyChair></TrendyChair>
-      <PurchaseShowSofa></PurchaseShowSofa>
-      <PurchaseShowChair></PurchaseShowChair>
-      <About></About>
-      <Contact></Contact>
+      <Fade bottom duration={2500} distance="40px">
+        <LuxuryDivan></LuxuryDivan>
+      </Fade>
+      <Fade bottom duration={2600} distance="70px">
+        <SofaClassic></SofaClassic>
+      </Fade>
+      <Fade bottom duration={2700} distance="110px">
+        <TrendyChair></TrendyChair>
+      </Fade>
+      <Fade bottom duration={2600} distance="40px">
+        <PurchaseShowSofa></PurchaseShowSofa>
+      </Fade>
+      <Fade bottom duration={2500} distance="40px">
+        <PurchaseShowChair></PurchaseShowChair>
+      </Fade>
+      <Fade bottom duration={2500} distance="40px">
+        <About></About>
+      </Fade>
+      <Fade bottom duration={2500} distance="40px">
+        <Contact></Contact>
+      </Fade>
       <Footer></Footer>
     </div>
   );

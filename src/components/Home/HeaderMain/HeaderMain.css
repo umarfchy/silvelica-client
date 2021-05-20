@@ -40,14 +40,14 @@
 
 @media (max-width: 480px) {
   .headerContainer {
-    height: 30vh;
+    height: 40vh;
   }
   .headerText {
-    font-size: 1.5rem;
-    padding: 0.5rem;
+    font-size: 1.6rem;
   }
   .headerActionBtn {
     font-size: 0.8rem;
+    margin-top: 1rem;
     padding: 0.5rem;
   }
 }
