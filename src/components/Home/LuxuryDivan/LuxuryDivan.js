@@ -11,7 +11,7 @@ const LuxuryDivan = () => {
         backgroundColor: "rgba(43, 43, 47, 1)",
         borderBottom: "0.1rem solid #000",
       }}
-      className="container row d-flex align-items-center mx-auto"
+      className="row d-flex align-items-center mx-auto"
     >
       <div className="col-md-6 col-sm-12">
         <img

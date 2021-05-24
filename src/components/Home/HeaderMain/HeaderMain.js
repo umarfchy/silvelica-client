@@ -3,7 +3,7 @@ import "./HeaderMain.css";
 
 const HeaderMain = () => {
   return (
-    <header className="headerContainer container">
+    <header className="headerContainer">
       <h3 className="headerText">Furniture That Matters</h3>
       <button
         className="headerActionBtn"

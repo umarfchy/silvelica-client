@@ -4,7 +4,6 @@ const About = () => {
   return (
     <section
       id="about"
-      className="container"
       style={{
         padding: "1rem 0",
         backgroundColor: "rgba(43, 43, 47, 1)",

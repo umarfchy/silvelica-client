@@ -9,7 +9,7 @@ import googleIcon from "./../../Images/icons/google_logo.svg";
 //all hooks
 import { useHistory, useLocation } from "react-router";
 import { userLogin } from "../../actions/index";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 const LoginFirebase = () => {
   // useDispatch was used in replacement to useContext.
@@ -26,10 +26,6 @@ const LoginFirebase = () => {
       history.replace(from);
     });
   };
-
-  //for testing purpose. Not in the production environment
-  const user = useSelector(state => state.user);
-  console.log(user);
 
   return (
     <div className="signInMainDiv">

@@ -3,8 +3,14 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import PurchaseCard from "../PurchaseCard/PurchaseCard";
 import sofaInfo from "./SofaInfo";
+import { useHistory } from "react-router";
 
 const PurchaseShow = () => {
+  const history = useHistory();
+
+  const handlePurchase = () => {
+    history.push("/success");
+  };
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -29,10 +35,9 @@ const PurchaseShow = () => {
       style={{
         background: "rgba(43, 43, 47, 1)",
         borderBottom: "1px solid black",
-        paddingBottom: "1rem  ",
+        paddingBottom: "1rem",
       }}
       id="sofaSection"
-      className="container"
     >
       <h3 className="text-center text-white py-2 mx-auto">
         Take The Luxury Settee
@@ -59,7 +64,7 @@ const PurchaseShow = () => {
         swipeable
       >
         {sofaInfo.map(info => (
-          <PurchaseCard info={info} />
+          <PurchaseCard info={info} handlePurchase={handlePurchase} />
         ))}
       </Carousel>
     </section>

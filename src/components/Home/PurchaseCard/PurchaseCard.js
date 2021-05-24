@@ -2,8 +2,8 @@ import React from "react";
 import { useMediaPredicate } from "react-media-hook";
 
 const PurchaseCard = props => {
-  const { title, details, img, price } = props.info;
-
+  const { info, handlePurchase } = props;
+  const { title, details, img, price } = info;
   const isMobile = useMediaPredicate("(max-width: 480px)");
   const cardParentDivStyle = isMobile
     ? {
@@ -88,6 +88,7 @@ const PurchaseCard = props => {
               fontWeight: "bold",
             }}
             className="btn btn-info mx-auto"
+            onClick={handlePurchase}
           >
             Purchase
           </button>

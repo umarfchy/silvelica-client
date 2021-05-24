@@ -12,7 +12,6 @@ const Contact = () => {
         color: "rgba(255, 255, 255, 0.7)",
       }}
       id="contact"
-      className="container"
     >
       <h2 className="text-center text-white mb-5">Contact Us</h2>
 

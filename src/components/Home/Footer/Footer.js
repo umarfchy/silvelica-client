@@ -9,7 +9,7 @@ const Footer = () => {
         backgroundColor: "rgba(43, 43, 47, 1)",
         borderBottom: "0.1rem solid #000",
       }}
-      className="container footer-area clear-both"
+      className="footer-area clear-both"
     >
       <p className="copyRight text-center">
         Copyright {new Date().getFullYear()} All Rights Reserved

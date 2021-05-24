@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 const Navigation = () => {
   return (
-    <Navbar className="container" bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg">
       <Navbar.Brand className="ml-2" href="#home">
         Silvelica
       </Navbar.Brand>

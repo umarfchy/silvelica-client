@@ -11,10 +11,14 @@
   align-items: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: transparent;
   border: 0.1rem solid rgb(22, 22, 161);
   border-radius: 1rem;
   padding: 0.5rem 0.5rem;
   width: 20rem;
   font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.signInBtn > p {
+  color: black;
 }

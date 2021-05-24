@@ -4,8 +4,8 @@ import { useMediaPredicate } from "react-media-hook";
 
 const SofaClassic = () => {
   const isMobile = useMediaPredicate("(max-width: 480px)");
-  const mobSectionCls = "container row d-flex mx-auto flex-column-reverse";
-  const pcSectionCls = "container row d-flex align-items-center mx-auto";
+  const mobSectionCls = "row d-flex mx-auto flex-column-reverse";
+  const pcSectionCls = "row d-flex align-items-center mx-auto";
 
   return (
     <section

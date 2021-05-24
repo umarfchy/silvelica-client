@@ -3,8 +3,15 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import PurchaseCard from "../PurchaseCard/PurchaseCard";
 import chairInfo from "./ChairInfo";
+import { useHistory } from "react-router";
 
 const PurchaseShow = () => {
+  const history = useHistory();
+
+  const handlePurchase = () => {
+    history.push("/success");
+  };
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -31,7 +38,6 @@ const PurchaseShow = () => {
         borderBottom: "1px solid black",
         paddingBottom: "1rem  ",
       }}
-      className="container"
     >
       <h3 className="text-center text-white py-2 mx-auto">
         Find Your Favorite Chair
@@ -58,7 +64,7 @@ const PurchaseShow = () => {
         swipeable
       >
         {chairInfo.map(info => (
-          <PurchaseCard info={info} />
+          <PurchaseCard info={info} handlePurchase={handlePurchase} />
         ))}
       </Carousel>
     </section>

@@ -1,9 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-//hooks
-import { useSelector } from "react-redux";
-
 //page body show section
 import About from "../About/About";
 import Contact from "../Contact/Contact/Contact";
@@ -18,8 +15,6 @@ import PurchaseShowChair from "../PurchaseShowChair/PurchaseShowChair";
 import PurchaseShowSofa from "../PurchaseShowSofa/PurchaseShowSofa";
 
 const Home = () => {
-  console.log(useSelector(state => state.user));
-
   return (
     <div>
       <Header></Header>

@@ -12,7 +12,7 @@ const TrendyChair = () => {
         borderBottom: "0.1rem solid #000",
         padding: "1rem",
       }}
-      className="container row d-flex align-items-center justify-content-center mx-auto pt-4"
+      className="row d-flex align-items-center justify-content-center mx-auto pt-4"
     >
       <div className="col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
         <img
