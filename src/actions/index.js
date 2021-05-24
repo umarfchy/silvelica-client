@@ -10,3 +10,11 @@ export const decrement = () => {
     type: "DECREMENT",
   };
 };
+
+//user login action
+export const userLogin = currentUser => {
+  return {
+    type: "USER_LOGIN",
+    payload: currentUser,
+  };
+};

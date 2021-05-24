@@ -1,18 +1,28 @@
 import "./App.css";
 import Home from "./components/Home/Home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useDispatch, useSelector } from "react-redux";
-import { increment, decrement } from "./actions/index";
+import LoginFirebase from "./components/LoginFirebase/LoginFirebase";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 function App() {
-  const counter = useSelector(state => state.counter);
-  const dispatch = useDispatch();
   return (
     <div className="appDisplay">
-      {/* <h1>{counter}</h1>
-      <button onClick={() => dispatch(increment(5))}>Increase value</button>
-      <button onClick={() => dispatch(decrement())}>Decrease value</button> */}
-      <Home></Home>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="/login">
+            <LoginFirebase></LoginFirebase>
+          </Route>
+          <Route path="/*">
+            <div>
+              <h1>Nothing was found</h1>
+            </div>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
